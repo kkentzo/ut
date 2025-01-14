@@ -1,0 +1,16 @@
+default: build
+
+tasks:
+  - name: build
+    description: build the application
+    env:
+      - GOOS: linux
+        GOARCH: amd64
+        GO_TARGET: bin/ut
+    actions:
+      - go build -ldflags="-s -w" -o ${GO_TARGET}
+
+  - name: test
+    description: run the tests
+    actions:
+      - go test ./...
