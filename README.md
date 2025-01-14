@@ -1,3 +1,5 @@
+[![test](https://github.com/kkentzo/ut/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/kkentzo/ut/actions/workflows/test.yml)
+
 # ut
 
 A utility that converts its arguments from unix timestamps to RFC3339 timestamps.
